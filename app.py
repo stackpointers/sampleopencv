@@ -8,7 +8,7 @@ PYCART_DIR = ''.join(['python-', '.'.join(map(str, sys.version_info[:2]))])
 
 try:
    zvirtenv = os.path.join(os.environ['OPENSHIFT_HOMEDIR'], PYCART_DIR,
-                           'virtenv', 'bin', 'activate_this.py')
+                           'virtenv', 'bin', 'face_recognition.py')
    exec(compile(open(zvirtenv).read(), zvirtenv, 'exec'),
         dict(__file__ = zvirtenv) )
 except IOError:
